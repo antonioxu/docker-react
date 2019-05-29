@@ -5,9 +5,9 @@ services:
 before_install:
   - docker build -t antonioxzxy/docker-react -f Dockerfile.dev .
 
-scripts:
+script:
   - docker run antonioxzxy/docker-react npm run test -- --coverage
 
-language:node_js
-node_js:
-  - "8"
+# language:node_js
+# node_js:
+#   - "8"
